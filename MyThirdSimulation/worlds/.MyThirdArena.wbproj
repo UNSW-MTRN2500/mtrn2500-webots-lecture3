@@ -5,7 +5,7 @@ sceneTreePerspectives: 000000ff00000001000000030000002600000272000000fa010000000
 maximizedDockId: -1
 centralWidgetVisible: 1
 orthographicViewHeight: 1
-textFiles: 0 "controllers/EPuckBlackControllerSln/EPuckBlackControllerSln.cpp" "controllers/EPuckBlackControllerSln/EPuckBlackRobot.cpp" "controllers/EPuckBlackControllerSln/EPuckBlackRobot.hpp" "controllers/EPuckBlackControllerSln/Makefile"
+textFiles: 3 "controllers/EPuckBlackControllerSln/EPuckBlackControllerSln.cpp" "controllers/EPuckBlackControllerSln/EPuckBlackRobot.hpp" "controllers/EPuckBlackControllerSln/EPuckBlackRobot.cpp" "controllers/EPuckGreenControllerSln/EPuckGreenControllerSln.cpp"
 globalOptionalRendering: DistanceSensorRays
 consoles: Console:All:All
 renderingDevicePerspectives: EPuckBlack:camera;1;1;0;0

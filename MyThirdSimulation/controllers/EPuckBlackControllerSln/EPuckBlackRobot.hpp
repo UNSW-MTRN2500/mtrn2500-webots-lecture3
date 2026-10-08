@@ -10,8 +10,11 @@
 
 class EPuckBlackRobot : public EPuckRobot {
 public:
+  enum class State {backward, roam};
   EPuckBlackRobot() = default;
   void run();
 protected:
   void backward();
+private:
+  State mState {State::roam};
 };

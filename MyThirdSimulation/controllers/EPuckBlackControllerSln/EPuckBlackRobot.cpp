@@ -10,7 +10,7 @@
 #include <string>
 
 void EPuckBlackRobot::backward() {
-  const double speedScale{0.5};
+  const double speedScale {0.5};
   mLeftSpeed = -speedScale * MAX_SPEED;
   mRightSpeed = -speedScale * MAX_SPEED;
   mLeftMotor->setVelocity(mLeftSpeed);
@@ -18,19 +18,18 @@ void EPuckBlackRobot::backward() {
 }
 
 void EPuckBlackRobot::run() {
-  bool isBackward {false};
   while(step(TIME_STEP) != -1) {
     // std::cout << receiveMessage() << std::endl;
     std::string msg {receiveMessage()};
     if(msg == "Backward") {
-      isBackward = true;
+      mState = State::backward;
     } else if(msg == "Roam") {
-      isBackward = false;
+      mState = State::roam;
     }
     
-    if(isBackward) {
+    if(mState == State::backward) {
       backward();
-    } else {
+    } else if(mState == State::roam){
       roam();
     }
   }

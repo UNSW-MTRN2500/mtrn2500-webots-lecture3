@@ -62,7 +62,7 @@ int main(int argc, char **argv) {
     }
 
     // detect obstacles
-    const double obstacleThreshold {90.0};
+    const double obstacleThreshold {80.0};
     bool rightObstacle {
       psValues[0] > obstacleThreshold ||
       psValues[1] > obstacleThreshold ||

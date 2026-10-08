@@ -21,7 +21,7 @@ void EPuckGreenRobot::display() const {
 }
 
 void EPuckGreenRobot::turn() {
-  const double speedScale{0.5};
+  const double speedScale {0.5};
   mLeftSpeed = speedScale * MAX_SPEED;
   mRightSpeed = - speedScale * MAX_SPEED;
   mLeftMotor->setVelocity(mLeftSpeed);
