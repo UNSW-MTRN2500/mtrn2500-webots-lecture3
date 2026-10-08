@@ -23,7 +23,7 @@ public:
 protected:
   void report() const;
   void roam();
-private:
+
   std::array<webots::DistanceSensor*, N_DIST_SENSORS> mPs {};
   std::array<double, N_DIST_SENSORS> mPsValues {};
   bool mLeftObstacle {};

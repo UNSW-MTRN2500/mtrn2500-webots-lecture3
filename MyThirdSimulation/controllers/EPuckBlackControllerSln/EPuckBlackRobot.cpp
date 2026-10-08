@@ -9,6 +9,11 @@
 #include <iostream>
 #include <string>
 
+EPuckBlackRobot::EPuckBlackRobot()
+  : mState {State::roam} 
+  {
+}
+
 void EPuckBlackRobot::backward() {
   const double speedScale {0.5};
   mLeftSpeed = -speedScale * MAX_SPEED;
